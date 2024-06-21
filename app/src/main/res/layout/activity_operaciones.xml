@@ -17,6 +17,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:id="@+id/txtUsuario"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,13 +81,13 @@
             android:layout_height="wrap_content"
             android:text="Limpiar"
             android:id="@+id/btnLimpiar"
-            app:layout_constrainBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Regresar"
             android:id="@+id/btnRegresar"
-            app:layout_constrainBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </LinearLayout>
 

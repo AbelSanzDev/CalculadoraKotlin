@@ -39,16 +39,14 @@ class MainActivity : AppCompatActivity() {
     }
     public fun eventosCLick(){
         btnIngresar.setOnClickListener(View.OnClickListener {
-            val usuario :String = getString(R.string.usuario);
-            val pas : String = getString(R.string.pass);
+            var usuario :String = getString(R.string.usuario);
+            var pas : String = getString(R.string.pass);
 
-            if(txtUsuario.toString().contentEquals(usuario)&& txtPassword.toString().contentEquals(pas)){
+
                 val intent = Intent(this,OperacionesActivity::class.java);
                 intent.putExtra("nombre","Abel");
                 startActivity(intent);
-            } else{
-                Toast.makeText(this,"Las credenciales son incorrectas",Toast.LENGTH_SHORT).show();
-            }
+
         })
 
         btnSalir.setOnClickListener(View.OnClickListener {
